@@ -10,25 +10,32 @@ inquirer
     {
     type: "input",
     message: "Project Name",
-    name: "prodName"
+    name: "projName"
     },
     {    
     type: "input",
     message: "Project Description",
-    name: "prodDesc"
+    name: "projDesc"
     },
     {    
     type: "input",
     message: "Project Table-Of-Contents",
-    name: "prodTOC"
+    name: "projTOC"
     },
     {
     type: "input",
     message: "Project Description",
-    name: "prodDesc"
+    name: "projDesc"
     },
-  ]);
- 
+    {
+      type: "input",
+      message: "Installation Instructions. Please describe installation process",
+      name: "projInstallation"
+      },
+  ])
+  .then(function(response){
+    console.log("information accepted "+JSON.stringify(response))
+  });
 
 };
 

@@ -1,5 +1,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
+const generateMarkdown = require("./mDController/readmeTemplate")
 
 //initializer
 function run() {
@@ -28,16 +29,16 @@ inquirer
     name: "projDesc"
     },
     {
-      type: "input",
-      message: "Installation Instructions. Please describe installation process",
-      name: "projInstallation"
-      },
+    type: "input",
+    message: "Installation Instructions. Please describe installation process",
+    name: "projInstallation"
+    }
   ])
   .then(function(response){
     console.log("information accepted "+JSON.stringify(response))
-    fs.writeFile("TestReadme.md", (response), function(err){
-      if (err){
-          return console.log(err);
+    fs.writeFile("TestReadme.md", generateMarkdown(response), function(error){
+      if (error){
+          return console.log(error);
       }
     });
   });

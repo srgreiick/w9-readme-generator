@@ -35,8 +35,16 @@ inquirer
   ])
   .then(function(response){
     console.log("information accepted "+JSON.stringify(response))
+    fs.writeFile("TestReadme.md", (response), function(err){
+      if (err){
+          return console.log(err);
+      }
+    });
   });
 
 };
+
+
+
 
 run();

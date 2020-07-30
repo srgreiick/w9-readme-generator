@@ -11,28 +11,45 @@ inquirer
 .prompt([
     {
     type: "input",
-    message: "Project Name",
+    message: "Enter Project Name:",
     name: "projName"
     },
     {    
     type: "input",
-    message: "Project Description",
+    message: "Project Description, please describe your project here:",
     name: "projDesc"
     },
     {
     type: "input",
-    message: "Installation Instructions. Please describe installation process",
-    name: "projInstallation"
+    message: "Please include a screen shot of functioning app, enter file path here:",
+    name: "projScrSht"
     },
     {
     type: "input",
-    message: "Usage Instructions. Please discide how to use this app",
-    name: "projUsage"
+    message: "Installation Instructions. Please describe how to install this app:",
+    name: "projInst"
     },
     {
     type: "input",
-    message: "Usage Instructions. Please discide how to use this app",
-    name: "projUsage"
+    message: "If contributions are allowed, enter guidelines here:",
+    name: "projContr",
+    },
+
+    {
+    type: "input",
+    message: "Describe how to run tests on your application:",
+    name: "projTests",
+    },
+    {
+    type: "list",
+    message: "Which kind of license would you like for this application?:",
+    name: "license",
+    choices: ["AGPLv3", "GPLv3", "LGPLv3", "MPL 2.0", "Apache 2.0", "MIT", "Boost 1.0", "PDDL"]
+    },
+    {
+    type: "input",
+    message: "Please provide and email address for users with inquiries or questions:",
+    name: "email"
     }
   ])
   .then(function(response){

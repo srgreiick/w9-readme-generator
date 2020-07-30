@@ -1,8 +1,8 @@
 // function to generate markdown for README
 function generateMarkdown(userInput) {
     return `
-##Project Name
-${userInput.projName}
+### Project Name
+# ${userInput.projName} asdf
 ## Description
 ${userInput.projDesc}  
 ## Table of Contents  
@@ -13,21 +13,19 @@ ${userInput.projDesc}
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)  
-![Screenshot](${userInput.screenshot})  
+![Screenshot](${userInput.projScrSht})  
 ## Installation  
-${userInput.projInstallation}
+${userInput.projInst}
 ## Usage
-${userInput.usage}
+${userInput.projUsage}
 ## Contributing
-${userInput.contribution}
+${userInput.projContr}
 ## Tests
-${userInput.tests}  
+${userInput.projTests}  
 ## License
 This application is covered under the ${userInput.license} license.
 ## Questions
-Please contact me for any aditional questions.  
-GitHub: https://github.com/${userInput.github}  
-Email: ${userInput.email}
+Please send questions or inquiries to: ${userInput.email}
 `;
     }
      

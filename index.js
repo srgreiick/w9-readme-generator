@@ -47,9 +47,10 @@ inquirer
     },
     {
     type: "list",
-    message: "Which kind of license would you like for this application?:",
+    message: "This Project is covered under what license?:",
     name: "license",
     choices: ["AGPLv3", "GPLv3", "LGPLv3", "MPL 2.0", "Apache 2.0", "MIT", "Boost 1.0", "PDDL"]
+    
     },
     {
     type: "input",

@@ -1,8 +1,8 @@
 
 ### Project Name
-# Readme Generator asdf
+# dsaf asdf
 ## Description
-Use this application to quickly build high quality markdown readme files for any development project!  
+  
 ## Table of Contents  
 - [Description](#description)
 - [Installation](#installation)
@@ -12,16 +12,18 @@ Use this application to quickly build high quality markdown readme files for any
 - [License](#license)
 - [Questions](#questions)  
 ## Media
-![Screenshot](/media/screenshot.png)  
+![Screenshot]()  
 ## Installation  
-Download or clone git repository. Open repository in git bash and run the command "npm i inquirer". Once inquirer is installed run the command "node index.html" to start the application.
+
 ## Usage
-undefined
+
 ## Contributing
-Contributions are not currently being accepted
+
 ## Tests
-Main test that would have been used in the creation of this program are function validation tests to ensure inquirer responses were being passed to functions that generated the markdown file.  
+  
 ## License
-This application is covered under the GPLv3 license.
+This application is covered under the LGPLv3 license.
+
+![License: LGPLv3](https://img.shields.io/badge/License-LGPLv3-blue.svg)
 ## Questions
-Please send questions or inquiries to: no email provided
+Please send questions or inquiries to: 

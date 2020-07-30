@@ -31,6 +31,11 @@ inquirer
     },
     {
     type: "input",
+    message: "Usage Instructions. Please describe how to use this app:",
+    name: "projUsage"
+    },
+    {
+    type: "input",
     message: "If contributions are allowed, enter guidelines here:",
     name: "projContr",
     },

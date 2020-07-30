@@ -13,6 +13,7 @@ ${userInput.projDesc}
 - [Tests](#tests)
 - [License](#license)
 - [Questions](#questions)  
+## Media
 ![Screenshot](${userInput.projScrSht})  
 ## Installation  
 ${userInput.projInst}

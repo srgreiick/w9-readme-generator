@@ -2,10 +2,11 @@
 
 //The structure here was adapted from dilan and wyatt's code on this project, thank you guys.
 function generateMarkdown(userInput) {
-    const licenseEdit = userInput.license.replace(" ", "%20");
+    
     return `
-### Project Name
-# ${userInput.projName} asdf
+### Project Name 
+# ${userInput.projName} asdf 
+![License: ${userInput.license}](https://img.shields.io/badge/License-${encodeURI(userInput.license)}-blue.svg)
 ## Description
 ${userInput.projDesc}  
 ## Table of Contents  
@@ -29,7 +30,7 @@ ${userInput.projTests}
 ## License
 This application is covered under the ${userInput.license} license.
 
-![License: ${userInput.license}](https://img.shields.io/badge/License-${licenseEdit}-blue.svg)
+
 ## Questions
 Please send questions or inquiries to: ${userInput.email}
 `;

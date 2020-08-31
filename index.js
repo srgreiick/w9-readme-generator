@@ -54,9 +54,11 @@ inquirer
     },
     {
     type: "input",
-    message: "Please provide and email address for users with inquiries or questions:",
+    message: "Please provide an email address for users with inquiries or questions:",
     name: "email"
     }
+    //add github
+
   ])
   .then(function(response){
     console.log("information accepted "+JSON.stringify(response))

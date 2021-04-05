@@ -5,7 +5,7 @@ function generateMarkdown(userInput) {
     
     return `
 ### Project Name 
-# ${userInput.projName} asdf 
+# ${userInput.projName} 
 ![License: ${userInput.license}](https://img.shields.io/badge/License-${encodeURI(userInput.license)}-blue.svg)
 ## Description
 ${userInput.projDesc}  

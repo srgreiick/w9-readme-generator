@@ -1,6 +1,6 @@
 
 ### Project Name
-# Readme Generator asdf
+# Readme Generator
 ## Description
 Use this application to quickly build high quality markdown readme files for any development project!  
 ## Table of Contents  
